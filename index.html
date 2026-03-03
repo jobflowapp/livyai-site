@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Livy AI</title>
+<title>Livy AI — Your AI Life Admin Assistant</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -11,10 +11,18 @@
     background: #07080f;
     color: #e0dfff;
     line-height: 1.7;
-    padding: 48px 24px 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
   }
-  .container { max-width: 720px; margin: 0 auto; }
-  .header { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
   .badge {
     display: inline-block;
     background: rgba(124,92,252,0.15);
@@ -25,130 +33,58 @@
     text-transform: uppercase;
     padding: 4px 14px;
     border-radius: 100px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
   h1 {
-    font-size: 36px;
+    font-size: 52px;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
     background: linear-gradient(135deg, #fff, #a78bfa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
   }
-  .updated { font-size: 13px; color: rgba(240,239,255,0.4); }
-  h2 {
+  .description {
     font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    margin: 32px 0 10px;
-    padding-left: 14px;
-    border-left: 2px solid #7c5cfc;
+    color: rgba(240,239,255,0.6);
+    max-width: 440px;
+    margin: 0 auto 48px;
   }
-  p { color: rgba(240,239,255,0.7); font-size: 15px; margin-bottom: 12px; }
-  ul { padding-left: 20px; margin-bottom: 12px; }
-  li { color: rgba(240,239,255,0.7); font-size: 15px; margin-bottom: 6px; }
-  a { color: #a78bfa; text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  .privacy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(124,92,252,0.12);
+    border: 1px solid rgba(124,92,252,0.3);
+    color: #a78bfa;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .privacy-link:hover {
+    background: rgba(124,92,252,0.22);
+    border-color: rgba(124,92,252,0.5);
+  }
   .footer {
-    margin-top: 56px;
-    padding-top: 24px;
-    border-top: 1px solid rgba(255,255,255,0.08);
+    margin-top: 64px;
     font-size: 13px;
-    color: rgba(240,239,255,0.35);
-    text-align: center;
+    color: rgba(240,239,255,0.25);
   }
-  .highlight {
-    background: rgba(124,92,252,0.08);
-    border: 1px solid rgba(124,92,252,0.2);
-    border-radius: 12px;
-    padding: 16px 20px;
-    margin: 16px 0;
-  }
-  .highlight p { margin-bottom: 0; }
 </style>
 </head>
 <body>
 <div class="container">
-
-  <div class="header">
-    <div class="badge">✦ Legal</div>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: March 3, 2026</p>
-  </div>
-
-  <div class="highlight">
-    <p>Livy AI is committed to protecting your privacy. We will never sell your personal data. This policy explains exactly what we collect, why we collect it, and how we protect it.</p>
-  </div>
-
-  <h2>1. Who We Are</h2>
-  <p>Livy AI ("we", "our", or "us") is an AI-powered life admin assistant mobile application available on iOS. We can be reached at <a href="mailto:livyaibusiness@gmail.com">livyaibusiness@gmail.com</a>.</p>
-
-  <h2>2. Information We Collect</h2>
-  <p>We collect the following types of information:</p>
-  <ul>
-    <li><strong>Account information</strong> — your name and email address when you create an account</li>
-    <li><strong>Life admin data</strong> — subscriptions, bills, deadlines, and renewal dates you manually enter or that are detected from your email</li>
-    <li><strong>Email data</strong> — only when you explicitly grant Gmail access (Pro feature). We access only billing, subscription, and renewal-related emails</li>
-    <li><strong>Device information</strong> — device type, operating system version, and app version for debugging purposes</li>
-    <li><strong>Usage analytics</strong> — how you interact with the app to help us improve the experience</li>
-  </ul>
-
-  <h2>3. How We Use Your Information</h2>
-  <ul>
-    <li>To provide AI-powered life admin tracking, reminders, and insights</li>
-    <li>To scan your email for subscriptions and bills (Pro feature, requires your explicit permission)</li>
-    <li>To send push notifications about upcoming renewals and deadlines</li>
-    <li>To power the Livy AI chat assistant using the Anthropic Claude API</li>
-    <li>To manage your subscription via RevenueCat</li>
-    <li>To improve our app and AI features over time</li>
-  </ul>
-
-  <h2>4. Email Access</h2>
-  <div class="highlight">
-    <p>Livy AI requests <strong>read-only</strong> access to your Gmail inbox solely to identify subscriptions, bills, and renewal notices. We do not read, store, or share your personal emails. Our system only processes emails containing billing-related keywords. You can revoke Gmail access at any time in the app Settings or directly through your Google Account settings at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
-  </div>
-
-  <h2>5. Data Storage & Security</h2>
-  <p>Your data is stored securely using Supabase with encryption at rest and in transit. We follow industry best practices for data security. We never sell, rent, or share your personal data with third parties for marketing purposes.</p>
-
-  <h2>6. Third Party Services</h2>
-  <p>We use the following third party services to operate Livy AI:</p>
-  <ul>
-    <li><strong>Supabase</strong> — secure database and user authentication</li>
-    <li><strong>Anthropic Claude API</strong> — AI-powered chat and insights</li>
-    <li><strong>RevenueCat</strong> — subscription and purchase management</li>
-    <li><strong>Expo</strong> — push notification delivery</li>
-    <li><strong>Google Gmail API</strong> — email scanning (Pro feature, opt-in only)</li>
-  </ul>
-
-  <h2>7. Your Rights & Data Deletion</h2>
-  <p>You have the right to:</p>
-  <ul>
-    <li>Access all data we hold about you</li>
-    <li>Request correction of inaccurate data</li>
-    <li>Request complete deletion of your account and all associated data</li>
-    <li>Revoke Gmail access at any time</li>
-    <li>Export your tracked data</li>
-  </ul>
-  <p>To exercise any of these rights, contact us at <a href="mailto:livyaibusiness@gmail.com">livyaibusiness@gmail.com</a> and we will respond within 30 days.</p>
-
-  <h2>8. Children's Privacy</h2>
-  <p>Livy AI is not intended for users under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us immediately.</p>
-
-  <h2>9. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes via the app or email. Continued use of Livy AI after changes constitutes acceptance of the updated policy.</p>
-
-  <h2>10. Contact Us</h2>
-  <p>If you have any questions about this Privacy Policy or how we handle your data, please contact us at:</p>
-  <p><a href="mailto:livyaibusiness@gmail.com">livyaibusiness@gmail.com</a></p>
-  <p>livyai.app</p>
-
+  <div class="badge">✦ Available on iOS</div>
+  <h1>Livy AI</h1>
+  <p class="description">Your AI-powered life admin assistant. Track subscriptions, bills, and deadlines — all in one place.</p>
+  <a class="privacy-link" href="/privacy.html">Privacy Policy</a>
   <div class="footer">
-    <p>© 2026 Livy AI · All rights reserved · <a href="mailto:livyaibusiness@gmail.com">livyaibusiness@gmail.com</a></p>
+    <p>© 2026 Livy AI · <a href="mailto:livyaibusiness@gmail.com" style="color:rgba(240,239,255,0.35);text-decoration:none;">livyaibusiness@gmail.com</a></p>
   </div>
-
 </div>
 </body>
 </html>
